@@ -1,0 +1,154 @@
+@import "reset";
+
+$background-color: #eaeaea;
+$font-size-big: 24px;
+$font-size-medium: 20px;
+$font-size-small: 12px;
+$font-size-small2: 11px;
+$font-size-mini: 10px;
+$white: #FFFFFF;
+$darkblue: #243043;
+$gray: #8A8787;
+$border-radius: 5px;
+$font:"Roboto", sans-serif; 
+
+
+@mixin items () {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+body {
+    background-color: $background-color;
+}
+
+nav {
+    @include items();
+    margin-left: 137px;
+    width: 362px;
+
+img {
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    object-fit: cover;
+    vertical-align: top;
+    margin-top: 11px;
+}
+
+h1 {
+    font-size: $font-size-small2;
+    font-family: $font;
+    vertical-align: top;
+    margin-top: 21px;
+    font-weight: 700;
+}
+
+}
+
+
+@mixin headerimgs () {
+    width: 362px;
+    height: 186px;
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+    position: relative;
+}
+
+header {
+   display: flex;
+   flex-direction: column;
+   margin-left: 137px;
+   margin-top: 42px;
+   margin-right: 136px;
+   ;
+h1{
+  width: 120px;
+  height: 28px;
+  font-family: $font;
+  font-size: $font-size-big;
+  font-weight: 700;
+}
+
+@mixin txt () {
+    position:absolute;
+    margin-left: 41px;
+    margin-top: 32px;
+    font-family: $font;
+    font-size: $font-size-medium;
+    font-weight: 700;
+    color: $white;
+}
+
+#imgs {
+    @include items();
+    margin-top: 27px;
+
+    div {
+    @include items();
+    @include headerimgs ();
+    }
+
+    img {
+    @include headerimgs ();
+    }
+
+    P {
+        @include txt();
+    }
+
+}
+
+
+#cards {
+ @include items();
+
+ div {
+    background-color: $white;
+    width: 362px;
+    height: 171px;
+    border-bottom-left-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+ 
+ }
+
+ h1 {
+    width: 238px;
+    height: 36px;
+    color: $gray;
+    font-family: $font;
+    font-weight: 700;
+    font-size: $font-size-mini;
+    margin-left: 37px;
+    margin-top: 68px;
+    line-height: 200%;
+ }
+
+ img {
+    width: 16px;
+    height: 16px;
+    margin-left: 40px;
+    margin-top: 11px;
+    vertical-align: top;
+ }
+
+ h2 {
+    width: 34px;
+    height: 12px;
+    color: $gray;
+    font-family: $font;
+    font-weight: 700;
+    font-size: $font-size-mini;
+    margin-left: 11px;
+    margin-top: 14px;
+    display: inline-block;
+    vertical-align: top;
+ }
+
+}
+
+
+
+}
