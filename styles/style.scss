@@ -182,6 +182,18 @@ main {
         height: 430px;
         margin-bottom: 36px;
         border-radius: $border-radius;
+        position: relative;
+       }
+
+
+       p{
+        font-family:$font;
+        font-weight: 700;
+        font-size: $font-size-medium;
+        position: absolute;
+        color: $white;
+        margin-left: 278px;
+        margin-top: 203px;
        }
     }
 
@@ -202,3 +214,97 @@ main {
 
 
 }
+
+    @mixin text() {
+    font-family: $font;
+    font-size: $font-size-small;
+    color: #818687;
+    margin-bottom: 14px;
+    font-weight: 700;
+    }
+
+footer {
+    width: 1520px;
+    height: 201px;
+
+    #foot {
+    width: 1520px;
+    height: 201px;
+    background-color: #243043;
+    display: flex;
+    flex-direction: row;
+    }
+
+#one {
+    display: flex;
+    flex-direction: column;
+    margin-top: 59px;
+    margin-bottom: 44px;
+    margin-left: 137px;
+
+
+p {
+  @include text()
+}
+
+}
+
+#two {
+    display: flex;
+    flex-direction: column;
+    margin-top: 59px;
+    margin-bottom: 44px;
+    margin-left: 96px;
+
+    p{
+        @include text()
+    }
+}
+
+#three {
+    display: flex;
+    flex-direction: column;
+    margin-top: 59px;
+    margin-bottom: 44px;
+    margin-left: 118px;
+
+    p{
+        @include text()
+    }
+}
+
+
+#four {
+    width: 249px;
+    height: 14px;
+    margin-top: 59px;
+    margin-left: 112px;
+
+
+
+    p {
+        font-family: $font;
+        font-size: $font-size-small;
+        font-weight: 400;
+        color: $white;
+    }
+}
+
+
+#five {
+    display: inline;
+    margin-top: 58px;
+    margin-left: 416px;
+
+
+    img {
+        width: 38px;
+        height: 40px;
+    }
+}
+
+
+
+}
+
+
