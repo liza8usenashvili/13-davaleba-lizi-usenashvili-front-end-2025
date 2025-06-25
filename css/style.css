@@ -162,4 +162,44 @@ header #cards h2 {
   margin-top: 14px;
   display: inline-block;
   vertical-align: top;
+}
+
+main {
+  margin-top: 57px;
+  margin-left: 140px;
+  display: flex;
+  flex-direction: column;
+}
+main #photos {
+  display: flex;
+  flex-direction: row;
+}
+main h1 {
+  width: 196px;
+  height: 28px;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+main #onerow {
+  display: flex;
+  flex-direction: column;
+}
+main #onerow img {
+  width: 758px;
+  height: 430px;
+  margin-bottom: 36px;
+  border-radius: 5px;
+}
+main #tworow {
+  display: flex;
+  flex-direction: column;
+  margin-left: 45px;
+}
+main #tworow img {
+  width: 362px;
+  height: 212px;
+  margin-bottom: 98px;
+  border-radius: 5px;
 }/*# sourceMappingURL=style.css.map */

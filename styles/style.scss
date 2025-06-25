@@ -149,6 +149,56 @@ h1{
 
 }
 
+}
+
+
+main {
+    margin-top: 57px;
+    margin-left: 140px;
+    display: flex;
+    flex-direction: column;
+
+    #photos {
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    h1 {
+     width: 196px;
+     height: 28px;
+     font-family: $font;
+     font-size: $font-size-big;  
+     font-weight: 800;
+     margin-bottom: 30px;
+    }
+
+    #onerow {
+       display: flex;
+       flex-direction: column;
+
+       img {
+        width: 758px;
+        height: 430px;
+        margin-bottom: 36px;
+        border-radius: $border-radius;
+       }
+    }
+
+
+    #tworow {
+        display: flex;
+        flex-direction: column;
+        margin-left: 45px;
+
+
+        img {
+            width: 362px;
+            height: 212px;
+            margin-bottom: 98px;
+            border-radius: $border-radius;
+        }
+    }
 
 
 }
